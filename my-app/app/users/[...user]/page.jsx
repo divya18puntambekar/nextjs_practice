@@ -1,15 +1,16 @@
 "use client"
 import { useRouter } from 'next/navigation';
 
-function page() {
-  const router = useRouter();
+function userDetails({params}) {
+    console.log("=== param s==",params)
+    const router = useRouter();
   return (
     <>
-      <div>users page</div>
+      <div>userDetails id</div>
       <button onClick={() => router.push('/')}>HomePage</button>
       <button onClick={() => router.push('/dashboard')}>Dashboard</button>
     </>
   )
 }
 
-export default page
+export default userDetails

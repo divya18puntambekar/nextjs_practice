@@ -1,7 +1,9 @@
 // import '@/assets/styles/global.css'
 const admin = () => {
   return (
-    <div>admin</div>
+    <>
+      <div>admin</div>
+    </>
   )
 }
 
